@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font: 400 1rem 'Kumbh Sans';
+  background-color: #19a2ae;
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-pattern-top {
+  width: 978px;
+  height: 978px;
+  position: absolute;
+  z-index: 0;
+}
+
+.big-pattern-bottom {
+  width: 978px;
+  height: 978px;
+  position: absolute;
+  z-index: 0;
+}
+
+@media screen and (min-width: 1441px) {
+  .bg-pattern-top {
+    top: -600px;
+    left: -250px;
+    scale: 1.5;
+  }
+
+  .big-pattern-bottom {
+    bottom: -640px;
+    right: -220px;
+    scale: 1.5;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1440px) {
+  .bg-pattern-top {
+    top: -500px;
+    left: -285px;
+  }
+
+  .big-pattern-bottom {
+    bottom: -640px;
+    right: -220px;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 800px) {
+  .bg-pattern-top {
+    top: -550px;
+    left: -550px;
+  }
+
+  .big-pattern-bottom {
+    bottom: -500px;
+    right: -600px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .bg-pattern-top {
+    top: -650px;
+    left: -650px;
+  }
+
+  .big-pattern-bottom {
+    bottom: -650px;
+    right: -650px;
+  }
+}
+
+#card {
+  height: 375px;
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: -7px 7px 35px 7px #6a6f81;
+  font-size: 1rem;
+}
+
+.card-top {
+  width: 100%;
+  height: 140px;
+  z-index: 1;
+  padding-bottom: 50px;
+}
+
+.card-image-victor > img {
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 2;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.card__main {
+  height: 145px;
+  width: 100%;
+  padding-top: 22%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.card__main .name {
+  width: 60%;
+  text-align: right;
+  font-weight: 700;
+}
+
+.card__main .age {
+  width: 40%;
+  text-align: left;
+  font-weight: 400;
+  color: gray;
+  padding-left: 10px;
+}
+
+.card__main .loc {
+  width: 100%;
+  font-weight: 400;
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.card__stats {
+  position: absolute;
+  bottom: 0;
+  height: 90px;
+  width: 100%;
+  border-top: 1px solid #e6e6e6;
+  padding-top: 7%;
+}
+
+.card__stats ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+  text-align: center;
+}
+
+.card__stats span {
+  font-weight: 700;
+}
+
+.card__stats p {
+  margin: 0;
+  padding-top: 5px;
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: gray;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
